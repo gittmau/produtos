@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{margin: 0; padding: 0; box-sizing: border-box;font-family: var(--font-familia)}
+
+:root{
+    --cor-fundo-1: #0398b0;
+    --cor-fundo-2: #79d65a;
+    --cor-fundo-3: #000;
+    --cor-titulo: #111;
+    --cor-texto: #333;
+    --cor-destaque: #fff;
+    --font-familia: 'Roboto Slab',sans-serif;
+}
+
+
+main{max-width: 1921px;margin: auto;}
+
+main{position: relative;}
+
+
+#topo{width:100%;display: flex; align-items: center; padding: 10px 20px;position: absolute;top: 0;left: 0;z-index: 1000;} 
+
+.conteudoTopo{font-weight: 600;margin: 0 5px;}
+
+.conteudoTopo img{width:50px}
+
+#capa{width:100%; height: 500px; background: linear-gradient(135deg, var(--cor-fundo-1), var(--cor-fundo-2));display: flex; justify-content: center; align-items: center;flex-direction: column;}
+
+.conteudoCapa{width:200px;text-align: center;}
+
+.conteudoCapa img{width: 80%; }
+
+.titulo-1{color:var(--cor-titulo)}
+
+#btnCompra{color: var(--cor-destaque);border: none;padding: 10px 0px;display: block;margin: auto;text-align: center;}
+
+button{width:150px;border: none;padding: 10px;cursor: pointer;border-radius: 25px;text-transform: lowercase;}
+
+
+
+#tecnologia{margin: 50px auto;}
+
+.conteudoTecnologia{width:250px;margin: 20px auto;}
+
+.conteudoGeracao img{width: 100%;}
+
+.conteudoTecnologia img{width:70%;display: block;margin: auto;}
+
+
+.titulo-2{text-align: center;}
+
+.descricaoTecnologia{text-align: center;padding: 10px;line-height: 1.5;color:var(--cor-texto)}
+
+#btnCompra2{display: block;width: 150px;margin: 20px auto;padding: 10px;text-align: center;color: var(--cor-destaque);border: none;cursor: pointer;border-radius: 25px;text-transform: lowercase;background-color: var(--cor-fundo-1);text-decoration: none;}
+
+
+.conteudoTecnologia {opacity: 0;transform: translateY(50px);transition: opacity 0.6s ease-out, transform 0.6s ease-out;}
+
+.conteudoTecnologia.visible {opacity: 1;transform: translateY(0);}
+
+.conteudoTecnologia img{width: 60%;}
+
+#tecnologia .conteudoTecnologia:nth-child(1) {transition-delay: 0.2s;}
+
+#tecnologia .conteudoTecnologia:nth-child(2) {transition-delay: 0.4s;}
+
+/* Adicione mais se tiver mais elementos */
+
+
+
+.titulo-3, .titulo-4{margin: 100px auto;text-align: center;}
+
+#tiposFones{margin: 100px auto;}
+
+.conteudoTipos{width: 300px;margin: 50px auto;text-align: center;border: 1px solid #ccc;padding: 10px;}
+
+.conteudoTipos img {width: 100%;border-bottom: 1px solid #ccc;padding-bottom: 15px;}
+
+.titulo-tipos{padding: 15px 0;text-align: center;font-weight: 200;}
+
+.descricao-tipos{text-align: center;padding: 10px;line-height: 1.5;color:var(--cor-texto)}
+
+.conteudoGeracao{margin:50px auto}
+
+.descricao-geracao, .titulo-geracao{text-align: left;padding: 10px;font-size: 1em;}
+
+.descricao-geracao{color:var(--cor-texto);line-height: 1.5;font-size: .9em;}
+
+
+footer{width:100%;background: linear-gradient(135deg, var(--cor-fundo-1), var(--cor-fundo-2));text-align: center;padding: 20px 0px;}
+
+.conteudoFooter{padding: 0px;margin: 50px auto;width:300px;color:var(--cor-texto)}
+
+.conteudoFooter img{width:100px;}
+
+.descricao-footer{line-height: 1.5;margin: 10px 0px;}
+
+.linkFooter{color: var(--cor-titulor-1);}
+
+#direitos{text-align: center;padding: 10px;color:var(--cor-destaque);font-size: .8em;background-color:var(--cor-texto);}
+
+
+
+
+@media(min-width: 360px){
+
+  .conteudoCapa{width:270px}
+
+  .conteudoTecnologia{width:360px;} 
+  
+  .descricaoTecnologia{text-align: center;padding: 10px;}
+
+  .conteudoTipos{width: 80%;padding: 15px;}
+
+  .conteudoGeracao{font-size: 1.1em;}
+
+  .conteudoFooter{width: 90%;}  
+
+
+}
+
+
+
+@media(min-width:768px){
+
+    #topo{left: 10%; transform: translateX(-10%); margin: 0;}
+
+    .conteudoTopo{margin: 0px 5px;}
+
+    #capa{flex-direction: row; justify-content: center; align-items: center;margin: 0;height:500px}
+
+    .conteudoCapa{width:300px}
+
+    button{margin: 0;}
+
+    #btnCompra{text-align: left;}
+
+    #btnCompra2{margin: 10px 0px;}
+
+    #tecnologia{display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;width: 70%;}
+
+    .descricaoTecnologia{text-align: left;padding: 10px 0px;}
+
+    .titulo-1{text-align: left;}
+
+    .titulo-2{text-align: left;font-size: 1.5em;}
+
+    #tiposFones{display: flex;justify-content: space-between;align-items: center;margin: 50px auto;width: 100%;flex-wrap: wrap;}
+
+   .conteudoTipos{width: 45%;}
+   
+   #machine{width: 82%;}
+
+   #alto-falante{width: 95%;}
+
+   #perfume{width: 59%;}
+
+   #motorola{width: 72%;}
+
+   .linkTipos{display: flex;}
+
+   
+   #geracaoFone{display: flex;flex-direction: row;justify-content: space-evenly; align-items: center;width: 90%;margin: auto;margin-bottom: 100px;}
+
+   .conteudoGeracao{width: 45%;margin: auto;position: relative;}
+
+   .conteudoGeracao img{width: 90%;border: 10px solid #ddecef;}
+
+   .titulo-geracao{color:var(--cor-texto)}
+
+   .descricao-geracao, .titulo-geracao{text-align: left;padding: 10px 0px;font-size: .9em;}
+
+   .textoGeracao{max-height: 200px;overflow:auto;text-align: left; scrollbar-width: thin;scrollbar-color: #888 #f1f1f1}
+
+ /* Chrome, Edge e Safari */
+ .textoGeracao::-webkit-scrollbar {width: 8px;}
+
+ .textoGeracao::-webkit-scrollbar-track {background: #f1f1f1;}
+
+ .textoGeracao::-webkit-scrollbar-thumb {background-color: #888;border-radius: 4px;border: 2px solid #f1f1f1;}
+
+ .textoGeracao::-webkit-scrollbar-thumb:hover {opacity: 0.8;}
+
+ footer{display: flex;justify-content: space-evenly;align-items: center;flex-wrap: wrap;} 
+
+.conteudoFooter{width: 75%;text-align: left;}
+
+}   
+
+
+@media(min-width:800px){
+    #motorola{width:300px;height: 350px;}
+    #alto-falante{width:300px;height: 350px;}
+    #perfume{width:300px;height: 400px;}
+
+    #machine{width: 83%;}
+
+   #perfume{width: 59%;}
+
+   #motorola{width: 85%;}
+}
+
+
+
+
+@media(min-width:1024px){    
+
+    #capa{height:658px}
+
+    .conteudoCapa{width:400px;padding-top: 0px;}
+
+    .conteudoCapa img{width: 100%;}
+
+    .titulo-1{font-size: 2.5em;font-weight: 500;text-align: center;}
+
+    #btnCompra{text-align:center;}
+
+    button{width:190px;padding: 10px;font-size: 1.2em;}
+    
+    button:hover{background-color: var(--cor-fundo-3);color: var(--cor-destaque);}
+
+    #btnCompra2:hover{background-color: var(--cor-fundo-3);color: var(--cor-destaque);}
+
+    #tecnologia{width: 70%;}
+
+    .conteudoTecnologia{width:70%;}
+
+    .titulo-2,.titulo-3{font-size: 2em;}
+
+    .conteudoTecnologia img{width:50%;}
+
+    .descricaoTecnologia{text-align:left;padding: 20px 0px;font-size: 1em;}
+
+    #tiposFones{max-width: 1380px;}
+
+    .conteudoTipos{width:45%;padding:10px 20px;}
+
+   .conteudoTipos:hover{box-shadow: 3px 2px 5px #ccc;transition: all 0.5s ease;}
+
+    .conteudoTipos img {transition: transform 0.3s ease;}
+
+    .conteudoTipos img:hover {transform: scale(.9);}
+
+    .tiposChild2{height: 550px;}
+
+    #machine{width:85% ;}
+
+    .itemsTipo4{height: 500px;}
+  
+
+    .itemsTipo5,.itemsTipo6,.itemsTipo7{height: 545px;}
+
+    .itemsTipo7,.itemsTipo8,.itemsTipo9{height: 500px;}
+
+    #sabonete,#controle,#furadeira{height: 250px;}
+
+    #motorola{width:95%;}
+
+    #alto-falante{width:300px;height: 350px;}
+
+    #perfume{width:300px;height: 400px;}
+
+    #geracaoFone{width:90%;}    
+
+    .textoGeracao{max-height: 300px;}
+
+    .titulo-geracao{font-size: 1em;padding: 10px;border-bottom: 1px solid #ddd;width: 85%;}
+
+    .descricao-geracao{font-size: .8em;padding: 10px;}
+
+    .conteudoGeracao img{width: 80%;}
+
+    footer{justify-content: space-around;height: 500px;}
+
+    .conteudoFooter{width: 22%;font-size: .9em;}  
+
+    .imgFooter{text-align: center;}
+
+    .linkFooter:hover{color: var(--cor-destaque);text-decoration: underline;}
+
+    #direitos{font-size: .9em;}
+
+    
+}
+
+
+@media(min-width:1280px){
+
+    .conteudoTopo{margin: 0px 15px;}
+
+    .conteudoTipos{width: 350px;border: 1px solid #ccc;padding:10px 20px;overflow: hidden;}
+
+    .conteudoTipos img {height: 400px;}
+
+    #geracaoFone{width:75%;}
+    
+    .itemsTipo4,.itemsTipo5,.itemsTipo6{height: 525px;}
+
+
+    
+}
