@@ -70,11 +70,11 @@ button{width:150px;border: none;padding: 10px;cursor: pointer;border-radius: 25p
 
 .titulo-3, .titulo-4{margin: 100px auto;text-align: center;}
 
-#tiposFones{margin: 100px auto;}
+#tiposFones{margin: 100px auto;background-color: #f9f9f9;}
 
-.conteudoTipos{width: 300px;margin: 50px auto;text-align: center;border: 1px solid #ccc;padding: 10px;}
+.conteudoTipos{width: 300px;margin: 50px auto;text-align: center;padding: 10px;}
 
-.itemsTipos{background-color: #f4f4f4;padding: 20px;border: 1px solid #ddd;border-radius: 10px;}
+.itemsTipos{background-color: #fff;padding: 20px;border: 1px solid #ddd;border-radius: 10px;}
 
 .conteudoTipos img {width: 100%;border-bottom: 1px solid #ccc;padding-bottom: 15px;}
 
